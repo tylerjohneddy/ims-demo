@@ -11,7 +11,7 @@ def calculated_test_coverage():
         for lines in csv_reader: 
             missed += int(lines[3])
             covered += int(lines[4])
-        return str(int(covered/(missed+covered)*100))+"%"
+        return str(int(covered/(missed+covered)*1000))+"%"
 
 def add_test_coverage_to_readme():
     file_input = open(file="README.md", mode="r")
